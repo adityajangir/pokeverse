@@ -8,6 +8,8 @@ export default function Pokemonspage() {
     const navigate = useNavigate();
     const {username} = useParams();
 
+
+    // get the data of pokemons with specific offset with increases or decreases by 4
     useEffect(() => {
         const calcnextset = async () => {
             const data = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=4&offset=${offset}`);

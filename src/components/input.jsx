@@ -3,7 +3,7 @@ import { ChangeEvent, FunctionComponent } from "react";
 
 
 import React from 'react'
-
+// input component for our login and signup page with dynamic attributes
 export default function FormInput({Type, TextToPut, value, onChange, name}) {
     return (
         <>

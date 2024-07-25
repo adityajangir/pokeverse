@@ -22,8 +22,7 @@ function App() {
     },
     {
       path: '/auth/:username/:pokemonname',
-      // element: <ProtectedRoute><Pokemonpage></Pokemonpage></ProtectedRoute> 
-      element: <Pokemonpage></Pokemonpage>
+      element: <ProtectedRoute><Pokemonpage></Pokemonpage></ProtectedRoute> 
     }
   ])
   return (

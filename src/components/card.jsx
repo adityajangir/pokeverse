@@ -4,7 +4,11 @@ export default function Card({ pokemonid, name }) {
   const [pdata, setPdata] = useState(null);
   const [loading, setLoading] = useState(true);
 
+
+
+  // get data of individual pokemon using either pokemonid or name depending acc to which page we are calling the component from
   useEffect(() => {
+    // function to get the pokemon data
     const getpokemondata = async () => {
       setLoading(true);
       const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonid}`);

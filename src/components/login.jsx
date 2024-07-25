@@ -13,12 +13,6 @@ export default function Login() {
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
-    // useEffect(() => {
-    //     if(!user.loggedin){
-    //         navigate('/signup');
-    //     }
-    //     console.log(user)
-    // })
 
     const handleFormInputChange = (e) => {
         const { name, value } = e.target;

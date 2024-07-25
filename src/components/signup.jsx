@@ -12,11 +12,16 @@ export default function Signup() {
     const [password, setPassword] = useState('');
     const dispatch = useDispatch();
     const navigate = useNavigate();
+
+    // Update our states on change
     const handleFormInputChange = (e) => {
         const { name, value } = e.target;
         if (name === 'username') setUsername(value);
         if (name === 'password') setPassword(value);
     };
+
+
+    // Use dispatch of react redux to signup the user where we stare the username and password
     const handlePasswordLogin = async (e) => {
         e.preventDefault();
         dispatch(signup({username, password, loggedin: false}));
